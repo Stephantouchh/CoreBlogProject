@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2NlmUF98Atky5+LpOEMGkxsmknZlYAkTRjgQ3PLpdJxlwVxofEaPRaBJia2E3sH3ANybxwPiaRWoWCo2gCllng==",
+  "dgSpecHash": "9qdvUGXT70kI6ewqpzUSqZo0PXmRngJJKoci9BIbJP3v7FEgTKk6Br90SEFYXGEnByyg4j2fNApgj4AtJ3dSIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\DotNetCoreCamp\\DotNetCoreCamp.csproj",
+  "projectFilePath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DotNetCoreCamp\\DotNetCoreCamp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\by\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\by\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

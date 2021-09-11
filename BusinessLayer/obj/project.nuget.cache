@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i4KQgLVobo8aShpGyvyzUet8u3e1wbvzH2mF3WQm76Hy3DUL/eZWRpuQjJcYQxOZUmBWWjTqs3k02LU0lMcT/g==",
+  "dgSpecHash": "fo+khRoyJ9Uov9ULYBhRILscot5jvLjdd/DTS4PKYXydUX+MGFnlq/qdVGjOMk+Zj+cppfFOU+wYJY705DKzCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\BusinessLayer\\BusinessLayer.csproj",
+  "projectFilePath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\by\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\by\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

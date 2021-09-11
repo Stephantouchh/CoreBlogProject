@@ -5860,11 +5860,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\DotNetCoreCamp\\DotNetCoreCamp.csproj",
+      "projectUniqueName": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DotNetCoreCamp\\DotNetCoreCamp.csproj",
       "projectName": "DotNetCoreCamp",
-      "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\DotNetCoreCamp\\DotNetCoreCamp.csproj",
+      "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DotNetCoreCamp\\DotNetCoreCamp.csproj",
       "packagesPath": "C:\\Users\\by\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\DotNetCoreCamp\\obj\\",
+      "outputPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DotNetCoreCamp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\by\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5883,14 +5883,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }

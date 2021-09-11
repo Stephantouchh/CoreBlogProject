@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BFxPdJBSZetWD0csQINa7HjwYUu5yfC+EAsKbfnHGE0HQ5W2kQnSf57KTgFs83RSlHV0FOZj1zSypobD6/rzvg==",
+  "dgSpecHash": "PwCOp+nsGy8xmxUFkCjkINBpLV+82tAxtjDAjGNC9RAcRFJW3NIFUixrdFsnCzolg+mNdsfXUNcsW+r6QGl0bg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\CoreLayer\\CoreLayer.csproj",
+  "projectFilePath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\CoreLayer\\CoreLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

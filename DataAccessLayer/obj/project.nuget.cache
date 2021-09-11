@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ThD8dTpdZ9xX68R4c09WXd3zoQtPn7STuHBk0P93hQ2UmwSRPDxWSO0vi1jxlbTNmldiqlxuDte/U9QWnxf1OQ==",
+  "dgSpecHash": "H+tBC5rgur2MdB9typqn2WNoz8QInRuucYd6pvAKoiGHAFN69MU1ys589ixxwE1WQi8bkqCRipHfxfxy3EDAIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc 5 Blog Projesi\\DotNetCoreCamp\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\by\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\by\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
