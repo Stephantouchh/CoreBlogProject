@@ -1,0 +1,12 @@
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\bin\Debug\net5.0\ref\EntityLayer.dll
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
+C:\Users\by\source\repos\Asp.Net Core Mvc 5 Blog Projesi\DotNetCoreCamp\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
