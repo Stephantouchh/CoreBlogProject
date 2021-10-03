@@ -18,35 +18,48 @@
                         <div class="col-md-6 mb-3">
                             <label for="validationCustom01">Adınız ve Soyadınız!</label>
 
-                            @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
+                            @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control", @id = "ValidationDefault01", @placeholder = "Lütfen Adınızı Giriniz!", @required = "" })
                             @Html.ValidationMessageFor(x => x.WriterName, "", new { @class = "text-success" })
-                            @*<input type="text" class="form-control" id="validationDefault01" name="WriterName" placeholder="" required="">*@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationCustom02">Mail Adresiniz!</label>
-                            @Html.TextBoxFor(x => x.WriterMail, new { @class = "form-control" })
+                            @Html.TextBoxFor(x => x.WriterMail, new { @class = "form-control", @id = "ValidationDefault02", @placeholder = "Lütfen Mail Adresinizi Giriniz!", @required = "" })
                             @Html.ValidationMessageFor(x => x.WriterMail, "", new { @class = "text-info" })
-                            @*<input type="email" class="form-control" id="validationDefault02" name="WriterMail" placeholder="" required="">*@
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="exampleInputPassword1 mb-2">Şifreniz!</label>
-                            @Html.TextBoxFor(x => x.WriterPassword, new { @class = "form-control" })
+                            @Html.PasswordFor(x => x.WriterPassword, new { @class = "form-control", @id = "password1", @placeholder = "Lütfen Şifrenizi Giriniz!", @required = "" })
                             @Html.ValidationMessageFor(x => x.WriterPassword, "", new { @class = "text-danger" })
-                            @*<input type="password" class="form-control" id="password1" name="WriterPassword" placeholder="" required="">*@
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword2 mb-2">Parolanızı Tekrar Giriniz</label>
+                            <input type="password" name="PasswordAgain" class="form-control" id="password2" placeholder="Şifrenizi Tekrar Giriniz" required="" />
                         </div>
                         @*<div class="form-group col-md-6">
                                 <label for="exampleInputPassword2 mb-2">Şifre Tekrar!</label>
                                 <input type="password" class="form-control" id="password2" name="WriterPassword" placeholder="" required="">
                             </div>*@
-                        <div class="col-md-6">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword2 mb-2">Görsel Dosya Yolu</label>
+
+                            @Html.TextBoxFor(x => x.WriterImage, new { @class = "form-control", @id = "ValidationDefault03", @placeholder = "Lütfen Dosya Yolunu Giriniz!", @required = "" })
+                            @Html.ValidationMessageFor(x => x.WriterImage, "", new { @class = "text-warning" })
+                        </div>
+                        @*<div class="form-group col-md-6">
+                            <label for="exampleInputPassword2 mb-2">Şehir</label>
+                            @Html.DropDownList("cities", (ViewBag.Cities), "Şehir Seçiniz", new { @class = "form-control dropdown" })
+                        </div>*@
+                    </div>
+                    @*<div class="col-md-6">
                             <label for="validationCustom01">Görsel Dosya Yolunuz!</label>
                             @Html.TextBoxFor(x => x.WriterImage, new { @class = "form-control" })
                             @Html.ValidationMessageFor(x => x.WriterImage, "", new { @class = "text-warning" })
-                            @*<input type="text" class="form-control" id="validationDefault01" name="WriterImage" placeholder="" required="">*@
-                        </div>
-                    </div>
+                        </div>*@
+
 
                     <button type="submit" class="btn btn-primary submit mb-4">Kayıt Ol</button>
                     <p>
@@ -59,7 +72,7 @@
     <br />
     <script>
         $('#btn1').click(function () {
-            swal("Site Kabul Şartları","Sitemizde verdiğiniz mail adresi üzerinden bilgi ve haber e-postaları spam ölçüsüne varmadan gönderilmeye devam edilecektir. Eğer e-posta bülteninden çıkmak iterseniz mail ileti dizisini durdurabilirsiniz, şifre ve mail adresleriniz şifrelenmiş formatta herhangi bir kullanıcının görmeyeceği şekilde veri tabanlarımızda saklanmaktadır.");
+            swal("Site Kabul Şartları", "Sitemizde verdiğiniz mail adresi üzerinden bilgi ve haber e-postaları spam ölçüsüne varmadan gönderilmeye devam edilecektir. Eğer e-posta bülteninden çıkmak iterseniz mail ileti dizisini durdurabilirsiniz, şifre ve mail adresleriniz şifrelenmiş formatta herhangi bir kullanıcının görmeyeceği şekilde veri tabanlarımızda saklanmaktadır.");
         });
     </script>
 </section>
