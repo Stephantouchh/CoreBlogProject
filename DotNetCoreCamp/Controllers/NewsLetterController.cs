@@ -14,16 +14,16 @@ namespace DotNetCoreCamp.Controllers
         NewsLetterManager nm = new NewsLetterManager(new EfNewsLetterRepository());
 
         [HttpGet]
-        public PartialViewResult SubscribeMail()
+        public IActionResult SubscribeMail()
         {
             return PartialView();
         }
         [HttpPost]
-        public PartialViewResult SubscribeMail(NewsLetter p)
+        public IActionResult SubscribeMail(NewsLetter p)
         {
             p.MailStatus = true;
             nm.AddNewsLetter(p);
-            return PartialView();
+            return RedirectToAction("Index","Blog");
         }
     }
 }

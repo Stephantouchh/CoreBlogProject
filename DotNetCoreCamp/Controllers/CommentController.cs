@@ -17,18 +17,18 @@ namespace DotNetCoreCamp.Controllers
             return View();
         }
         [HttpGet]
-        public PartialViewResult PartialAddComment()
+        public IActionResult PartialAddComment()
         {
             return PartialView();
         }
         [HttpPost]
-        public PartialViewResult PartialAddComment(Comment p)
+        public IActionResult PartialAddComment(Comment p)
         {
             p.CommentDate = DateTime.Parse(DateTime.Now.ToShortDateString());
             p.CommentStatus = true;
             p.BlogID = 2;
             cm.CommentAdd(p);
-            return PartialView();
+            return RedirectToAction("Index","Blog");
         }
         public PartialViewResult CommentListByBlog(int id)
         {

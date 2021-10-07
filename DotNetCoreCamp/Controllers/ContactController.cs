@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Concrete;
+﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
@@ -13,6 +14,13 @@ namespace DotNetCoreCamp.Controllers
     {
         ContactManager cm = new ContactManager(new EfContactRepository());
 
+        //private readonly INotyfService _notyf;
+
+        //public ContactController(INotyfService notyf)
+        //{
+        //    _notyf = notyf;
+        //}
+
         [HttpGet]
         public IActionResult Index()
         {
@@ -24,7 +32,8 @@ namespace DotNetCoreCamp.Controllers
             p.ContactDate = DateTime.Parse(DateTime.Now.ToShortDateString());
             p.ContactStatus = true;
             cm.ContactAdd(p);
-            return RedirectToAction("Index","Blog");
+            //_notyf.Success("Mesajınız Başarılı Bir Şekilde İletildi.");
+            return RedirectToAction("Index", "Blog");
         }
     }
 }
