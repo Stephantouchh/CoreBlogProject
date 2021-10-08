@@ -256,3 +256,5 @@ C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\D
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\bin\Debug\net5.0\AspNetCoreHero.Results.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\bin\Debug\net5.0\AspNetCoreHero.ToastNotification.Views.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\bin\Debug\net5.0\AspNetCoreHero.ToastNotification.dll
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Writer\Index.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Writer\WriterProfile.cshtml.g.cs
