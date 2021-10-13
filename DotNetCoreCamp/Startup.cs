@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,14 +28,31 @@ namespace DotNetCoreCamp
         {
             services.AddControllersWithViews();
 
-            services.AddSession();
-
             services.AddMvc(config =>
             {
                 var policy = new AuthorizationPolicyBuilder()
                                .RequireAuthenticatedUser()
                                .Build();
                 config.Filters.Add(new AuthorizeFilter(policy));
+            });
+
+            services.AddMvc();
+            services.AddAuthentication(
+                CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(x =>
+                {
+                    x.LoginPath = "/Login/Index/";
+                }
+                );
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                //Cookie settings
+                options.Cookie.HttpOnly = true;
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+
+                options.LoginPath = "/Login/Index/";
+                options.SlidingExpiration = true;
             });
         }
 
@@ -55,10 +73,9 @@ namespace DotNetCoreCamp
             app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?code={0}");
 
             app.UseHttpsRedirection();
-
             app.UseStaticFiles();
 
-            app.UseSession();
+            app.UseAuthentication();
 
             app.UseRouting();
 
