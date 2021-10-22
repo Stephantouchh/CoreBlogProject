@@ -1,0 +1,71 @@
+﻿@using EntityLayer.Concrete
+@model List<Blog>
+@{
+    ViewData["Title"] = "BlogListByWriter";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+
+@{
+    string color = "";
+    string statusColor = "";
+    string durummm = "";
+    string checkStatus = "";
+    string buttonStatusColor = "";
+    string Image = "";
+}
+
+<h1>Yazara Ait Bloglar</h1>
+
+<table class="table table-hover">
+    <tr>
+        <th>#</th>
+        <th>Blog Başlığı</th>
+        <th>Oluşturulma Tarihi</th>
+        <th>Kategori</th>
+        <th>Durum</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        //switch (item.BlogStatus)
+        //{
+        //    case true:
+        //        statusColor = "badge rounded-pill bg-success";
+        //        break;
+        //    case false:
+        //        statusColor = "badge rounded-pill bg-danger";
+        //        break;
+        //}
+
+        //if (item.BlogStatus == true)
+        //{
+        //    durummm = "Şuan Aktif";
+        //}
+        //else
+        //{
+        //    durummm = " Şuan Pasif";
+        //}
+        <tr>
+            <th>@item.BlogID</th>
+            <td>@item.BlogTitle</td>
+            <td> @(((DateTime)item.BlogCreateDate).ToString("dd MMMM yyyy"))</td>
+            <td>@item.Category.CategoryName</td>
+            <td>
+                @if (item.BlogStatus)
+                {
+                    <span class="badge badge-info">Blog Aktif</span>
+                }
+                else
+                {
+                    <span class="badge badge-success">Blog Pasif</span>
+                }
+            </td>
+            <td><a href="#" class="btn btn-danger">Sil</a></td>
+            <td><a href="#" class="btn btn-warning">Düzenle</a></td>
+        </tr>
+    }
+</table>
+<br />
+<a href="/Blog/BlogAdd/" class="btn btn-primary">Yeni Blog Oluştur</a>
