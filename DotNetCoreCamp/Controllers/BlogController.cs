@@ -17,6 +17,7 @@ namespace DotNetCoreCamp.Controllers
     public class BlogController : Controller
     {
         BlogManager bm = new BlogManager(new EfBlogRepository());
+        CategoryManager cm = new CategoryManager(new EfCategoryRepository());
 
         public IActionResult Index()
         {
@@ -34,10 +35,8 @@ namespace DotNetCoreCamp.Controllers
             var values = bm.GetListWithCategoryByWriterBm(1);
             return View(values);
         }
-        [HttpGet]
-        public IActionResult BlogAdd()
+        public void GetCategoryList()
         {
-            CategoryManager cm = new CategoryManager(new EfCategoryRepository());
             List<SelectListItem> categoryvalues = (from x in cm.GetList()
                                                    select new SelectListItem
                                                    {
@@ -45,6 +44,11 @@ namespace DotNetCoreCamp.Controllers
                                                        Value = x.CategoryID.ToString()
                                                    }).ToList();
             ViewBag.cv = categoryvalues;
+        }
+        [HttpGet]
+        public IActionResult BlogAdd()
+        {
+            GetCategoryList();
             return View();
         }
         [HttpPost]
@@ -67,7 +71,37 @@ namespace DotNetCoreCamp.Controllers
                     ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
             }
+            GetCategoryList();
             return View();
+        }
+        public IActionResult DeleteBlog(int id)
+        {
+            var blogvalue = bm.TGetById(id);
+            bm.TDelete(blogvalue);
+            return RedirectToAction("BlogListByWriter");
+        }
+        [HttpGet]
+        public IActionResult EditBlog(int id)
+        {
+            var blogvalue = bm.TGetById(id);
+            List<SelectListItem> categoryvalues = (from x in cm.GetList()
+                                                   select new SelectListItem
+                                                   {
+                                                       Text = x.CategoryName,
+                                                       Value = x.CategoryID.ToString()
+                                                   }).ToList();
+            ViewBag.cv = categoryvalues;
+            return View(blogvalue);
+        }
+        [HttpPost]
+        public IActionResult EditBlog(Blog blog)
+        {
+            var value = bm.TGetById(blog.BlogID);
+            blog.WriterID = 1;
+            blog.BlogCreateDate = value.BlogCreateDate;
+            blog.BlogStatus = true;
+            bm.TUpdate(blog);
+            return RedirectToAction("BlogListByWriter");
         }
     }
 }
