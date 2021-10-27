@@ -84,18 +84,13 @@ namespace DotNetCoreCamp.Controllers
         public IActionResult EditBlog(int id)
         {
             var blogvalue = bm.TGetById(id);
-            List<SelectListItem> categoryvalues = (from x in cm.GetList()
-                                                   select new SelectListItem
-                                                   {
-                                                       Text = x.CategoryName,
-                                                       Value = x.CategoryID.ToString()
-                                                   }).ToList();
-            ViewBag.cv = categoryvalues;
+            GetCategoryList();
             return View(blogvalue);
         }
         [HttpPost]
         public IActionResult EditBlog(Blog blog)
         {
+            GetCategoryList();
             var value = bm.TGetById(blog.BlogID);
             blog.WriterID = 1;
             blog.BlogCreateDate = value.BlogCreateDate;
