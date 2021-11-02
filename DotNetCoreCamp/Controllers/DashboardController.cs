@@ -12,6 +12,7 @@ namespace DotNetCoreCamp.Controllers
         [AllowAnonymous]
         public IActionResult Index()
         {
+
             return View();
         }
     }
