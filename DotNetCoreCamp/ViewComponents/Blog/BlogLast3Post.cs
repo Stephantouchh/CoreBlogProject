@@ -14,7 +14,7 @@ namespace DotNetCoreCamp.ViewComponents.Blog
 
         public IViewComponentResult Invoke()
         {
-            var values = bm.GetLast3Blog();
+            var values = bm.GetLast3Blog(3);
             return View(values);
         }
     }

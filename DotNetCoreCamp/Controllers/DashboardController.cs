@@ -1,4 +1,6 @@
-﻿using DataAccessLayer.Concrete;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,10 +15,11 @@ namespace DotNetCoreCamp.Controllers
         [AllowAnonymous]
         public IActionResult Index()
         {
-            Context context = new Context();
-            ViewBag.v1 = context.Blogs.Count().ToString();
-            ViewBag.v2 = context.Blogs.Where(x=>x.WriterID==1).Count();
-            ViewBag.v3 = context.Categories.Count();
+            BlogManager blogManager = new BlogManager(new EfBlogRepository());
+            CategoryManager categoryManager = new CategoryManager(new EfCategoryRepository());
+            ViewBag.v1 = blogManager.GetList(x => x.BlogStatus == true).Count();
+            ViewBag.v2 = blogManager.GetBlogListByWriter(1).Count();
+            ViewBag.v3 = categoryManager.GetList().Count();
             return View();
         }
     }

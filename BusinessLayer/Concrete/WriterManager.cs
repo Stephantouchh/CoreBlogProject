@@ -4,6 +4,7 @@ using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,7 +21,12 @@ namespace BusinessLayer.Concrete
 
         public List<Writer> GetList()
         {
-            throw new NotImplementedException();
+            return _writerDal.GetListAll();
+        }
+
+        public List<Writer> GetList(Expression<Func<Writer, bool>> filter = null)
+        {
+            return _writerDal.GetListAll(filter);
         }
 
         public List<Writer> GetWriterById(int id)
@@ -36,6 +42,11 @@ namespace BusinessLayer.Concrete
         public void TDelete(Writer t)
         {
             throw new NotImplementedException();
+        }
+
+        public Writer TGetByFilter(Expression<Func<Writer, bool>> filter = null)
+        {
+            return _writerDal.GetByFilter(filter);
         }
 
         public Writer TGetById(int id)
