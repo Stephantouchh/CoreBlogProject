@@ -10,15 +10,15 @@ namespace DotNetCoreCamp.ViewComponents.Writer
 {
     public class WriterMessageNotification : ViewComponent
     {
-        MessageManager mm = new MessageManager(new EfMessageRepository());
+        Message2Manager mm = new Message2Manager(new EfMessage2Repository());
 
         public IViewComponentResult Invoke()
         {
-            var values = mm.GetList(x => x.Receiver == "deneme@gmail.com" &&
-              x.MessageStatus == true);
+            var values = mm.
+                GetList(x => x.ReceiverID == 2 && x.MessageStatus == true);
             if (values.Count() > 3)
             {
-                values = values.Take(3).ToList();
+                values = values.TakeLast(3).ToList();
             }
             return View(values);
         }
