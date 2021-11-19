@@ -1,9 +1,10 @@
 ﻿@using EntityLayer.Concrete
-@model List<Blog>
+@model List<Message2>
 @{
-    ViewData["Title"] = "BlogListByWriter";
+    ViewData["Title"] = "InBox";
     Layout = "~/Views/Shared/WriterLayout.cshtml";
 }
+
 
 
 @{
@@ -15,17 +16,16 @@
     string Image = "";
 }
 
-<h1>Yazara Ait Bloglar</h1>
+<h1>Gelen Kutusu</h1>
 <br />
 <table class="table table-hover">
     <tr>
         <th>#</th>
-        <th>Blog Başlığı</th>
-        <th>Oluşturulma Tarihi</th>
-        <th>Kategori</th>
-        <th>Durum</th>
-        <th>Sil</th>
-        <th>Düzenle</th>
+        <th>Konu</th>
+        <th>Gönderen</th>
+        <th>Tarih</th>
+        <th>Mesaj Durumu</th>
+        <th>Mesajı Aç</th>
     </tr>
     @foreach (var item in Model)
     {
@@ -48,24 +48,23 @@
         //    durummm = " Şuan Pasif";
         //}
         <tr>
-            <th>@item.BlogID</th>
-            <td>@item.BlogTitle</td>
-            <td> @(((DateTime)item.BlogCreateDate).ToString("dd MMMM yyyy"))</td>
-            <td>@item.Category.CategoryName</td>
+            <th>@item.MessageID</th>
+            <td>@item.Subject</td>
+            <td>@item.SenderUser.WriterName</td>
+            <td> @(((DateTime)item.MessageDate).ToString("dd MMMM yyyy"))</td>
             <td>
-                @if (item.BlogStatus)
+                @if (item.MessageStatus)
                 {
-                    <span class="badge badge-info">Blog Aktif</span>
+                    <span class="badge badge-info">Mesaj Okundu!</span>
                 }
                 else
                 {
-                    <span class="badge badge-success">Blog Pasif</span>
+                    <span class="badge badge-success">Mesaj Okunmadı!</span>
                 }
             </td>
-            <td>@Html.ActionLink("Sil", "DeleteBlog", new { id = item.BlogID }, new { @class = "btn btn-danger", onclick = "return confirm('Silmek İstediğinize Eminmisiniz?')" })</td>
-            <td><a href="/Blog/EditBlog/@item.BlogID" class="btn btn-warning">Düzenle</a></td>
+            <td><a href="/Message/MessageDetails/@item.MessageID" class="btn btn-warning">Mesajı Aç</a></td>
         </tr>
     }
 </table>
 <br />
-<a href="/Blog/BlogAdd/" class="btn btn-primary">Yeni Blog Oluştur</a>
+<a href="/Message/MessageAdd/" class="btn btn-primary">Yeni Mesaj Oluştur</a>
