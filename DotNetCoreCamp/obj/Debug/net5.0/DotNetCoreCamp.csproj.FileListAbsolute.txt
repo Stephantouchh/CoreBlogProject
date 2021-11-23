@@ -277,3 +277,7 @@ C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\D
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Notification\AllNotification.cshtml.g.cs
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Message\InBox.cshtml.g.cs
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Message\MessageDetails.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Shared\AdminLayout.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Admin\AdminNavbarPartial.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Areas\Admin\Views\Category\Index.cshtml.g.cs
