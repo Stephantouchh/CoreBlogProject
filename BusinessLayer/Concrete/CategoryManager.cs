@@ -32,7 +32,7 @@ namespace BusinessLayer.Concrete
         }
         public void TDelete(Category t)
         {
-            _categoryDal.Delete(t);
+            _categoryDal.Update(t);
         }
         public void TUpdate(Category t)
         {

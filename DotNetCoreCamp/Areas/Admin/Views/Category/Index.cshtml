@@ -1,10 +1,112 @@
-﻿
+﻿@using EntityLayer.Concrete
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<EntityLayer.Concrete.Category>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
 
-<br />
-<h2>Ders 90 burada kaldık, gelecek ders kategorileri listeleyeceğiz</h2>
+@{
+    string color = "";
+    string statusColor = "";
+    string headingStatus = "";
+    string checkStatus = "";
+    string buttonStatusColor = "";
+    string Image = "";
+}
+
+<!DOCTYPE html>
+<html>
+
+<body class="hold-transition sidebar-mini">
+    <section class="content">
+        <!-- Default box -->
+        <div class="card">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th style="width: 10%">
+                            #
+                        </th>
+                        <th style="width: 30%">
+                            Kategori Adı
+                        </th>
+                        <th style="width: 30%">
+                            Kategori Durumu
+                        </th>
+                        <th style="width: 30%">
+                            Düzenle
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        switch (item.CategoryStatus)
+                        {
+                            case true:
+                                statusColor = "badge rounded-pill bg-success";
+                                buttonStatusColor = "btn btn-danger";
+                                break;
+                            case false:
+                                statusColor = "badge rounded-pill bg-danger";
+                                buttonStatusColor = "btn btn-success";
+                                break;
+                        }
+
+                        if (item.CategoryStatus == false)
+                        {
+
+                            checkStatus = "Aktif Yap";
+                        }
+                        else
+                        {
+                            checkStatus = "Pasif Yap";
+                        }
+
+                        if (@item.CategoryStatus)
+                        {
+                            headingStatus = " Aktif";
+                        }
+                        else
+                        {
+                            headingStatus = " Pasif";
+                        }
+
+                        <tr>
+                            <td>
+                                @item.CategoryID
+                            </td>
+                            <td>
+                                <a>
+                                    @item.CategoryName
+                                </a>
+                                <br />
+                            </td>
+                            <td class="project-state">
+                                <span class="@statusColor">@headingStatus</span>
+                            </td>
+                            <td class="project-warning ">
+                                <a class="btn btn-info btn-sm" href="/Heading/EditHeading/@item.CategoryID">
+
+                                    Düzenle
+                                </a>
+                                <a class="@buttonStatusColor btn-sm" href="/Admin/Category/DeleteCategory/@item.CategoryID" id="DeleteBtn"
+                                   onclick="return confirm('Durumunu Değiştirmek İstediğinize Emin Misiniz?');">
+
+                                    @checkStatus
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <a href="/Admin/Category/AddCategory/" class="btn btn-info">Yeni Kategori Ekle</a>
+        </div>
+        <br />
+    </section>
+</body>
+</html>
+@Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }))
