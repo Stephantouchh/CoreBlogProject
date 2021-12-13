@@ -36,7 +36,7 @@ namespace BusinessLayer.Concrete
             return _blogDal.GetListAll(x => x.BlogID == id);
         }
 
-        public List<Blog> GetList(Expression<Func<Blog, bool>> filter)
+        public List<Blog> GetList(Expression<Func<Blog, bool>> filter = null)
         {
             return _blogDal.GetListAll(filter);
         }
