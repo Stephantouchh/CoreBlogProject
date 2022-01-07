@@ -30,6 +30,21 @@ namespace DotNetCoreCamp.Areas.Admin.Controllers
             return Json(jsonWriters);
         }
 
+        [HttpPost]
+        public IActionResult AddWriter(WriterClass w)
+        {
+            writers.Add(w);
+            var jsonwriters = JsonConvert.SerializeObject(w);
+            return Json(jsonwriters);
+        }
+
+        public IActionResult DeleteWriter(int id)
+        {
+            var writer = writers.FirstOrDefault(x => x.Id == id);
+            writers.Remove(writer);
+            return Json(writer);
+        }
+
         public static List<WriterClass> writers = new List<WriterClass>
         {
             new WriterClass
