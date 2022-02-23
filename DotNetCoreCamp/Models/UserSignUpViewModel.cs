@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace DotNetCoreCamp.Models
 {
@@ -17,7 +13,7 @@ namespace DotNetCoreCamp.Models
         public string Password { get; set; }
 
         [Display(Name = "Şifre Tekrar")]
-        [Compare("Password",ErrorMessage ="Şifreler uyuşmuyor!")]
+        [Compare("Password", ErrorMessage = "Şifreler uyuşmuyor!")]
         public string ConfirmPassword { get; set; }
 
         [Display(Name = "Mail Adresi")]

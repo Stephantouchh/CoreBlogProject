@@ -3,10 +3,7 @@ using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
@@ -41,7 +38,7 @@ namespace BusinessLayer.Concrete
 
         public Notification TGetById(int id)
         {
-           return  _notificationDal.GetByID(id);
+            return _notificationDal.GetByID(id);
         }
 
         public void TUpdate(Notification t)

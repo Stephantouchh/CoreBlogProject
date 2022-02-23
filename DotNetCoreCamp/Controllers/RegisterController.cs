@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace DotNetCoreCamp.Controllers
 {
@@ -25,18 +24,18 @@ namespace DotNetCoreCamp.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Index(Writer writer,string PasswordAgain, string cities)
+        public IActionResult Index(Writer writer, string PasswordAgain, string cities)
         {
             WriterValidator wv = new WriterValidator();
             ValidationResult results = wv.Validate(writer);
-            if (results.IsValid && writer.WriterPassword==PasswordAgain)
+            if (results.IsValid && writer.WriterPassword == PasswordAgain)
             {
                 writer.WriterStatus = true;
                 writer.WriterAbout = "Deneme Test";
                 wm.TAdd(writer);
                 return RedirectToAction("Index", "Blog");
             }
-            else if(!results.IsValid)
+            else if (!results.IsValid)
             {
                 foreach (var item in results.Errors)
                 {
@@ -58,7 +57,7 @@ namespace DotNetCoreCamp.Controllers
                                                   Text = x,
                                                   Value = x
                                               }).ToList();
-            return adminrole;                  
+            return adminrole;
         }
         public List<string> GetCity()
         {

@@ -11,7 +11,6 @@ C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\B
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\BlogApiDemo\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\BlogApiDemo\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\BlogApiDemo\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\BlogApiDemo\obj\Debug\net5.0\BlogApiDemo.csproj.AssemblyReference.cache
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\BlogApiDemo\obj\Debug\net5.0\BlogApiDemo.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\BlogApiDemo\obj\Debug\net5.0\BlogApiDemo.AssemblyInfoInputs.cache
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\BlogApiDemo\obj\Debug\net5.0\BlogApiDemo.AssemblyInfo.cs

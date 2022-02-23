@@ -14,7 +14,6 @@ C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\E
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\EntityLayer\bin\Debug\net5.0\ref\EntityLayer.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
-C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
