@@ -1,4 +1,4 @@
-﻿
+﻿@model UserSignInViewModel
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/UserLayout.cshtml";
@@ -11,12 +11,12 @@
             <div class="login p-5 bg-light mx-auto mw-100">
                 <form method="post">
                     <div class="form-group">
-                        <label for="exampleInputEmail1 mb-2">Mail Adresiniz!</label>
-                        <input type="email" class="form-control" name="WriterMail" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
+                        <label for="exampleInputEmail1 mb-2">Kullanıcı Adınız!</label>
+                        <input type="text" class="form-control" asp-for="@Model.username" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1 mb-2">Şifreniz!</label>
-                        <input type="password" class="form-control" name="WriterPassword" id="exampleInputPassword1" placeholder="" required="">
+                        <input type="password" class="form-control" asp-for="@Model.password" id="exampleInputPassword1" placeholder="" required="">
                     </div>
                     @*<div class="form-check mb-2">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">

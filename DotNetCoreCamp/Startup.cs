@@ -1,5 +1,7 @@
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -26,7 +28,11 @@ namespace DotNetCoreCamp
         {
             services.AddDbContext<Context>();
 
-            services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
+            services.AddIdentity<AppUser, AppRole>(x =>
+            {
+                x.Password.RequireUppercase = false;
+                x.Password.RequireNonAlphanumeric = false;
+            }).AddEntityFrameworkStores<Context>();
 
             services.AddControllersWithViews();
 
@@ -56,7 +62,12 @@ namespace DotNetCoreCamp
                 options.LoginPath = "/Login/Index/";
                 options.SlidingExpiration = true;
             });
+
+            services.AddControllersWithViews().AddFluentValidation(x =>
+           x.RegisterValidatorsFromAssemblyContaining<BlogValidator>());
         }
+
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

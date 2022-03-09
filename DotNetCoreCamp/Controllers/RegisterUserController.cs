@@ -23,17 +23,22 @@ namespace DotNetCoreCamp.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Index(UserSignUpViewModel p)
+        public async Task<IActionResult> Index(UserSignUpViewModel userSignUpViewModel)
         {
+            if (!userSignUpViewModel.TermsOfUse)
+            {
+                ModelState.AddModelError("TermsOfUse", "Sayfamıza kayıt olabilmek için lütfen gizlilik sözleşmesini kabul edin!");
+                return View(userSignUpViewModel);
+            }
             if (ModelState.IsValid)
             {
                 AppUser user = new AppUser()
                 {
-                    Email = p.Mail,
-                    UserName = p.UserName,
-                    NameSurname = p.nameSurname
+                    Email = userSignUpViewModel.Mail,
+                    UserName = userSignUpViewModel.UserName,
+                    NameSurname = userSignUpViewModel.NameSurname
                 };
-                var result = await _userManager.CreateAsync(user, p.Password);
+                var result = await _userManager.CreateAsync(user, userSignUpViewModel.Password);
                 if (result.Succeeded)
                 {
                     return RedirectToAction("Index", "Login");
@@ -46,7 +51,7 @@ namespace DotNetCoreCamp.Controllers
                     }
                 }
             }
-            return View(p);
+            return View(userSignUpViewModel);
         }
     }
 }

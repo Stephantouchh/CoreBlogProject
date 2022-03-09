@@ -6,7 +6,7 @@ namespace DotNetCoreCamp.Models
     {
         [Display(Name = "Ad Soyad")]
         [Required(ErrorMessage = "Lütfen ad soyad giriniz")]
-        public string nameSurname { get; set; }
+        public string NameSurname { get; set; }
 
         [Display(Name = "Şifre")]
         [Required(ErrorMessage = "Lütfen şifre giriniz")]
@@ -23,5 +23,6 @@ namespace DotNetCoreCamp.Models
         [Display(Name = "Kullanıcı Adı")]
         [Required(ErrorMessage = "Lütfen kullanıcı adınızı giriniz")]
         public string UserName { get; set; }
+        public bool TermsOfUse { get; set; }
     }
 }
