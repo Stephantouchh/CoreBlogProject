@@ -1,21 +1,16 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
 namespace DotNetCoreCamp.Controllers
 {
+    [AllowAnonymous]
     public class ContactController : Controller
     {
         ContactManager cm = new ContactManager(new EfContactRepository());
-
-        //private readonly INotyfService _notyf;
-
-        //public ContactController(INotyfService notyf)
-        //{
-        //    _notyf = notyf;
-        //}
 
         [HttpGet]
         public IActionResult Index()
