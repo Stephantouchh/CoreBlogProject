@@ -1,57 +1,57 @@
-﻿@model EntityLayer.Concrete.AppUser
+﻿@model UserUpdateViewModel
 @{
     ViewData["Title"] = "WriterEditProfile";
     Layout = "~/Views/Shared/WriterLayout.cshtml";
 }
 
-@using (Html.BeginForm("WriterEditProfile", "Writer", FormMethod.Post))
-{
-    <div class="col-12 grid-margin stretch-card">
-        <div class="card">
-            <div class="card-body">
-                <h4 class="card-title">Yazar Profil Bilgileri Düzenleme</h4>
-                <br />
-                @Html.HiddenFor(x => x.Id)
-            <form class="forms-sample">
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Yazar Profil Bilgileri Düzenleme</h4>
+            <br />
+            <form class="forms-sample" method="post">
                 <div class="form-group">
                     <label for="exampleInputName1">Adınız!</label>
-                    @Html.TextBoxFor(x => x.NameSurname, new { @class = "form-control" })
+                    <input type="text" asp-for="@Model.namesurname" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="exampleInputName2">Kullanıcı Adınız!</label>
-                    @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+                    <input type="text" asp-for="@Model.username" class="form-control" />
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail3">Mail Adresiniz!</label>
-                    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+                    <input type="text" asp-for="@Model.mail" class="form-control" />
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword4">Şifreniz!</label>
-                    @Html.PasswordFor(x => x.PasswordHash, new { @class = "form-control" })
-                    @Html.ValidationMessageFor(x => x.PasswordHash, "", new { @class = "text-danger" })
+                    <label for="exampleInputEmail3">Resim Yolunuz!</label>
+                    <input type="text" asp-for="@Model.imageurl" class="form-control" />
                 </div>
+                <!--<div class="form-group">
+                <label for="exampleInputPassword4">Şifreniz!</label>-->
+                @*@Html.PasswordFor(x => x.PasswordHash, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.PasswordHash, "", new { @class = "text-danger" })*@
+                <!--</div>-->
                 @*<div class="form-group">
-            <label for="exampleInputPassword2 mb-2">Parolanızı Tekrar Giriniz</label>
-            <input type="password" name="PasswordAgain" class="form-control" id="password2" placeholder="Şifrenizi Tekrar Giriniz" required="" />
-        </div>*@
-                <div class="form-group">
-                    <label>GÖRSELİNİZ!</label>
-                    <input type="file" name="img[]" class="file-upload-default">
-                    <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Resminizi Yükleyiniz...">
-                        <span class="input-group-append">
-                            <button class="file-upload-browse btn btn-gradient-primary" type="button">Resim Seç</button>
-                        </span>
-                    </div>
-                </div>
+                        <label for="exampleInputPassword2 mb-2">Parolanızı Tekrar Giriniz</label>
+                        <input type="password" name="PasswordAgain" class="form-control" id="password2" placeholder="Şifrenizi Tekrar Giriniz" required="" />
+                    </div>*@
                 @*<div class="form-group">
-                    <label for="exampleTextarea1">Hakkınızda!</label>
-                    @Html.TextAreaFor(x => x.WriterAbout, 10, 3, new { @class = "form-control" })
-                </div>*@
+                        <label>GÖRSELİNİZ!</label>
+                        <input type="file" name="img[]" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                            <input type="text" class="form-control file-upload-info" disabled placeholder="Resminizi Yükleyiniz...">
+                            <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-gradient-primary" type="button">Resim Seç</button>
+                            </span>
+                        </div>
+                    </div>*@
+                @*<div class="form-group">
+                        <label for="exampleTextarea1">Hakkınızda!</label>
+                        @Html.TextAreaFor(x => x.WriterAbout, 10, 3, new { @class = "form-control" })
+                    </div>*@
                 <button type="submit" class="btn btn-gradient-primary mr-2">Güncelle</button>
                 <button class="btn btn-light">İptal</button>
             </form>
-            </div>
         </div>
     </div>
-}
+</div>
