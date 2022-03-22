@@ -39,25 +39,10 @@ namespace DotNetCoreCamp.Controllers
             }
             return View();
         }
-        //[HttpPost]
-        //public async Task<IActionResult> Index(Writer writer)
-        //{
-        //    Context c = new Context();
-        //    var datavalue = c.Writers.FirstOrDefault(x => x.WriterMail == writer.WriterMail && x.WriterPassword == writer.WriterPassword);
-        //    if (datavalue != null)
-        //    {
-        //        var claims = new List<Claim>
-        //        {
-        //            new Claim(ClaimTypes.Name,writer.WriterMail)
-        //        };
-        //        var useridentity = new ClaimsIdentity(claims, "a");
-        //        ClaimsPrincipal principal = new ClaimsPrincipal(useridentity);
-        //        await HttpContext.SignInAsync(principal);
-        //        return RedirectToAction("Index", "Dashboard");
-        //    }
-        //    else
-        //    {
-        //        return View();
-        //    }
+        public async Task<IActionResult> LogOut()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Login");
+        }
     }
 }

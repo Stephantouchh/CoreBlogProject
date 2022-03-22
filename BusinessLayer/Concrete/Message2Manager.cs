@@ -18,12 +18,17 @@ namespace BusinessLayer.Concrete
 
         public List<Message2> GetInboxListByWriter(int id)
         {
-            return _message2Dal.GetListWithMessageByWriter(id);
+            return _message2Dal.GetInboxWithMessageByWriter(id);
         }
 
         public List<Message2> GetList(Expression<Func<Message2, bool>> filter = null)
         {
             return _message2Dal.GetListAll(filter);
+        }
+
+        public List<Message2> GetSendBoxListByWriter(int id)
+        {
+            return _message2Dal.GetSendBoxWithMessageByWriter(id);
         }
 
         public void TAdd(Message2 t)

@@ -316,3 +316,7 @@ C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\D
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\RegisterUser\Index.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Message\SendMessage.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Views\Message\SendBox.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminMessage\Inbox.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminMessage\SendBox.cshtml.g.cs

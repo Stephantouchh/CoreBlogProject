@@ -1,17 +1,24 @@
 ﻿@using EntityLayer.Concrete
 @model List<Message2>
 @{
-    ViewData["Title"] = "InBox";
+    ViewData["Title"] = "SendBox";
     Layout = "~/Views/Shared/WriterLayout.cshtml";
 }
 
-<h1>Gelen Kutusu</h1>
+@*@{
+    string color = "";
+    string statusColor = "";
+    string checkStatus = "";
+    string buttonStatusColor = "";
+}*@
+
+<h1>Giden Kutusu</h1>
 <br />
 <table class="table table-hover">
     <tr>
         <th>#</th>
         <th>Konu</th>
-        <th>Gönderen</th>
+        <th>Alıcı</th>
         <th>Tarih</th>
         <th>Mesaj Durumu</th>
         <th>Mesajı Aç</th>
@@ -21,7 +28,7 @@
         <tr>
             <th>@item.MessageID</th>
             <td>@item.Subject</td>
-            <td>@item.SenderUser.WriterName</td>
+            <td>@item.ReceiverUser.WriterName</td>
             <td> @(((DateTime)item.MessageDate).ToString("dd MMMM yyyy"))</td>
             <td>
                 @if (item.MessageStatus)

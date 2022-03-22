@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>INSPINIA | Static Tables</title>
-
+    <link rel="shortcut icon" href="~/writer/assets/images/favicon.ico" />
     <link href="~/inspinia-gh-pages/css/bootstrap.min.css" rel="stylesheet">
     <link href="~/inspinia-gh-pages/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="~/inspinia-gh-pages/css/plugins/iCheck/custom.css" rel="stylesheet">
@@ -35,7 +35,7 @@
                         <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
                         <form role="search" class="navbar-form-custom" action="search_results.html">
                             <div class="form-group">
-                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                                <input type="text" placeholder="Aranacak kelimeyi girin..." class="form-control" name="top-search" id="top-search">
                             </div>
                         </form>
                     </div>
@@ -149,25 +149,25 @@
 
                 </nav>
             </div>
-            <div class="row wrapper border-bottom white-bg page-heading">
-                <div class="col-lg-10">
-                    <h2>İstatistikler</h2>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="index.html">Dashboard</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a>Tablolar</a>
-                        </li>
-                        <li class="breadcrumb-item active">
-                            <strong>Widgets</strong>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col-lg-2">
+            @*<div class="row wrapper border-bottom white-bg page-heading">
+                    <div class="col-lg-10">
+                        <h2>İstatistikler</h2>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a>Tablolar</a>
+                            </li>
+                            <li class="breadcrumb-item active">
+                                <strong>Widgets</strong>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="col-lg-2">
 
-                </div>
-            </div>
+                    </div>
+                </div>*@
             <div class="wrapper wrapper-content animated fadeInRight">
                 @RenderBody()
             </div>
@@ -189,8 +189,6 @@
         </div>
     </div>
 
-
-
     <!-- Mainly scripts -->
     <script src="~/inspinia-gh-pages/js/jquery-3.1.1.min.js"></script>
     <script src="~/inspinia-gh-pages/js/popper.min.js"></script>
@@ -199,8 +197,7 @@
     <script src="~/inspinia-gh-pages/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
     <!-- jquery UI -->
-    <script src="~/inspinia-gh-pages/js/plugins/jquery-ui/jquery-ui.min.js"></script>
-
+    <!--<script src="~/inspinia-gh-pages/js/plugins/jquery-ui/jquery-ui.min.js"></script>-->
     <!-- Touch Punch - Touch Event Support for jQuery UI -->
     <script src="~/inspinia-gh-pages/js/plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
 
@@ -217,6 +214,8 @@
     <!-- Peity -->
     <script src="~/inspinia-gh-pages/js/demo/peity-demo.js"></script>
 
+
+
     <script>
         $(document).ready(function () {
             $('.i-checks').iCheck({
@@ -224,7 +223,7 @@
                 radioClass: 'iradio_square-green',
             });
         });</script>
-    @*@await RenderSectionAsync("scripts")*@
+    @await RenderSectionAsync("Scripts", false)
 </body>
 
 </html>

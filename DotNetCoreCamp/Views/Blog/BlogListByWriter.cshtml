@@ -6,15 +6,16 @@
 }
 
 
-@{
+@*@{
     string color = "";
     string statusColor = "";
     string durummm = "";
     string checkStatus = "";
     string buttonStatusColor = "";
-}
+}*@
 
 <h1>Yazara Ait Bloglar</h1>
+<h1>@ViewBag.v</h1>
 <br />
 <table class="table table-hover">
     <tr>
@@ -28,24 +29,6 @@
     </tr>
     @foreach (var item in Model)
     {
-        //switch (item.BlogStatus)
-        //{
-        //    case true:
-        //        statusColor = "badge rounded-pill bg-success";
-        //        break;
-        //    case false:
-        //        statusColor = "badge rounded-pill bg-danger";
-        //        break;
-        //}
-
-        //if (item.BlogStatus == true)
-        //{
-        //    durummm = "Şuan Aktif";
-        //}
-        //else
-        //{
-        //    durummm = " Şuan Pasif";
-        //}
         <tr>
             <th>@item.BlogID</th>
             <td>@item.BlogTitle</td>
