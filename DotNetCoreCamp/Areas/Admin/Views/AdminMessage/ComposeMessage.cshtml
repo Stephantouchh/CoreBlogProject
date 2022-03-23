@@ -1,4 +1,4 @@
-﻿
+﻿@model EntityLayer.Concrete.Message2
 @{
     ViewData["Title"] = "ComposeMessage";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
@@ -47,37 +47,31 @@
                     </h2>
                 </div>
                 <div class="mail-box">
-
-
                     <div class="mail-body">
-
-                        <form method="get">
+                        <form method="post">
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Alıcı:</label>
-
-                                <div class="col-sm-10"><input type="text" class="form-control"></div>
+                                <div class="col-sm-10"><input type="text" class="form-control" /></div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Konu:</label>
-
-                                <div class="col-sm-10"><input type="text" class="form-control" value=""></div>
+                                <div class="col-sm-10"><input type="text" class="form-control" value="" name="Subject" /></div>
                             </div>
                             <div class="form-group row">
                                 <label class="col-sm-2 col-form-label">Mesajınız:</label>
-
-                               <textarea class="col-sm-10 form-control" rows="4" cols="10"></textarea>
+                                <textarea class="col-sm-10 form-control" rows="4" cols="10" name="MessageDetails"></textarea>
                             </div>
+                            <button class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Gönder"><i class="fa fa-reply"></i> Gönder</button>
                         </form>
-                    </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="mail-body text-right tooltip-demo">
-                        <a href="mailbox.html" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Gönder"><i class="fa fa-reply"></i> Gönder</a>
-                        <a href="mailbox.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Vazgeç"><i class="fa fa-times"></i> Vazgeç</a>
-                        <a href="mailbox.html" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Taslaklara kaydet"><i class="fa fa-pencil"></i> Taslak</a>
                     </div>
                     <div class="clearfix"></div>
                 </div>
+                <div class="mail-body text-right tooltip-demo">
+                    <a asp-action="ComposeMessage" class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Gönder"><i class="fa fa-reply"></i> Gönder</a>
+                    <a href="#" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Vazgeç"><i class="fa fa-times"></i> Vazgeç</a>
+                    <a href="#" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Taslaklara kaydet"><i class="fa fa-pencil"></i> Taslak</a>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>

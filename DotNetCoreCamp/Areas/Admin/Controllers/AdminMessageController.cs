@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
+using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -20,10 +21,10 @@ namespace DotNetCoreCamp.Areas.Admin.Controllers
             var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();
             var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
             var values = mm.GetInboxListByWriter(writerID);
-            if (values.Count() > 3)
-            {
-                values = values.TakeLast(3).ToList();
-            }
+            //if (values.Count() > 10)
+            //{
+            //    values = values.TakeLast(10).ToList();
+            //}
             return View(values);
         }
         public IActionResult SendBox()
@@ -32,15 +33,31 @@ namespace DotNetCoreCamp.Areas.Admin.Controllers
             var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();
             var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
             var values = mm.GetSendBoxListByWriter(writerID);
-            if (values.Count() > 3)
-            {
-                values = values.TakeLast(3).ToList();
-            }
+            //if (values.Count() > 10)
+            //{
+            //    values = values.TakeLast(10).ToList();
+            //}
             return View(values);
         }
+
+        [HttpGet]
         public IActionResult ComposeMessage()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult ComposeMessage(Message2 message)
+        {
+            var username = User.Identity.Name;
+            var usermail = c.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();
+            var writerID = c.Writers.Where(x => x.WriterMail == usermail).Select(y => y.WriterID).FirstOrDefault();
+            message.SenderID = writerID;
+            message.ReceiverID = 2;
+            message.MessageDate = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            message.MessageStatus = true;
+            mm.TAdd(message);
+            return RedirectToAction("SendBox");
         }
     }
 }
