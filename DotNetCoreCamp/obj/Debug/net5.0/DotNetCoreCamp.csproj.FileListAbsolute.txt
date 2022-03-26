@@ -323,3 +323,6 @@ C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\D
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminMessage\ComposeMessage.cshtml.g.cs
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminBlog\Index.cshtml.g.cs
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminComment\Index.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminRole\Index.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminRole\AddRole.cshtml.g.cs
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\obj\Debug\net5.0\Razor\Areas\Admin\Views\AdminRole\UpdateRole.cshtml.g.cs
