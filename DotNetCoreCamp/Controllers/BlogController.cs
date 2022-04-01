@@ -13,7 +13,7 @@ using System.Linq;
 
 namespace DotNetCoreCamp.Controllers
 {
-   
+
     public class BlogController : Controller
     {
         BlogManager bm = new BlogManager(new EfBlogRepository());

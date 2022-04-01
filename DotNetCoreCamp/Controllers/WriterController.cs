@@ -1,10 +1,8 @@
 ﻿using BusinessLayer.Concrete;
-using BusinessLayer.ValidationRules;
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using DotNetCoreCamp.Models;
 using EntityLayer.Concrete;
-using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;

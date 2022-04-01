@@ -13,6 +13,20 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
+#line 1 "C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\Areas\Admin\Views\_ViewImports.cshtml"
+using DotNetCoreCamp.Areas.Admin;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\Areas\Admin\Views\_ViewImports.cshtml"
+using DotNetCoreCamp.Areas.Admin.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\Areas\Admin\Views\AdminMessage\SendBox.cshtml"
 using EntityLayer.Concrete;
 
@@ -20,8 +34,12 @@ using EntityLayer.Concrete;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b85bfb5d94483883ab7dd14bff36b03fcfb7cddc", @"/Areas/Admin/Views/AdminMessage/SendBox.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"846ee9a585c1fabbfae7f0ad49f68ae0e4b037fc", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_AdminMessage_SendBox : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Message2>>
     {
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "get", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("index.html"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("float-right mail-search"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         #line hidden
         #pragma warning disable 0649
         private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
@@ -43,6 +61,8 @@ using EntityLayer.Concrete;
             }
         }
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.BodyTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_BodyTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -56,7 +76,7 @@ using EntityLayer.Concrete;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b85bfb5d94483883ab7dd14bff36b03fcfb7cddc3286", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b85bfb5d94483883ab7dd14bff36b03fcfb7cddc5253", async() => {
                 WriteLiteral(@"
     <div class=""wrapper wrapper-content"">
         <div class=""row"">
@@ -92,7 +112,9 @@ using EntityLayer.Concrete;
             <div class=""col-lg-9 animated fadeInRight"">
                 <div class=""mail-box-header"">
 
-                    <form method=""get"" action=""index.html"" class=""float-right mail-search"">
+                    ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b85bfb5d94483883ab7dd14bff36b03fcfb7cddc7981", async() => {
+                    WriteLiteral(@"
                         <div class=""input-group"">
                             <input type=""text"" class=""form-control form-control-sm"" name=""search"" placeholder=""Mailde ara..."">
                             <div class=""input-group-btn"">
@@ -101,23 +123,46 @@ using EntityLayer.Concrete;
                                 </button>
                             </div>
                         </div>
-                    </form>
+                    ");
+                }
+                );
+                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_0.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_0);
+                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_1);
+                __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_2);
+                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                if (!__tagHelperExecutionContext.Output.IsContentModified)
+                {
+                    await __tagHelperExecutionContext.SetOutputContentAsync();
+                }
+                Write(__tagHelperExecutionContext.Output);
+                __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                WriteLiteral(@"
                     <h2>
                         Giden Mesajlar (0)
                     </h2>
                     <div class=""mail-tools tooltip-demo m-t-md"">
-     ");
-                WriteLiteral(@"                   <div class=""btn-group float-right"">
+                        <div class=""btn-group float-right"">
                             <button class=""btn btn-white btn-sm""><i class=""fa fa-arrow-left""></i></button>
                             <button class=""btn btn-white btn-sm""><i class=""fa fa-arrow-right""></i></button>
                         </div>
                         <button class=""btn btn-white btn-sm"" data-toggle=""tooltip"" data-placement=""left"" title=""Gelen Kutusunu Yenile""><i class=""fa fa-refresh""></i> Yenile</button>
                         <button class=""btn btn-white btn-sm"" data-toggle=""tooltip"" data-placement=""top"" title=""Okundu olarak işaretle""><i class=""fa fa-eye""></i> </button>
                         <button class=""btn btn-white btn-sm"" data-toggle=""tooltip"" data-placement=""top"" title=""Önemli Olarak İşaretle""><i class=""fa fa-exclamation""></i> </button>
-                        <button class=""btn btn-white btn-sm"" data-toggle=""tooltip"" data-placement=""top"" title=""Çöp Kutusuna Taşı""><i class=""fa fa-trash-o""></i> </button>
+               ");
+                WriteLiteral(@"         <button class=""btn btn-white btn-sm"" data-toggle=""tooltip"" data-placement=""top"" title=""Çöp Kutusuna Taşı""><i class=""fa fa-trash-o""></i> </button>
 
-            ");
-                WriteLiteral("        </div>\r\n                </div>\r\n                <div class=\"mail-box\">\r\n\r\n                    <table class=\"table table-hover table-mail\">\r\n                        <tbody>\r\n");
+                    </div>
+                </div>
+                <div class=""mail-box"">
+
+                    <table class=""table table-hover table-mail"">
+                        <tbody>
+");
 #nullable restore
 #line 72 "C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DotNetCoreCamp\Areas\Admin\Views\AdminMessage\SendBox.cshtml"
                              foreach (var item in Model)

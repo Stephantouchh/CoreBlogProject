@@ -12,7 +12,7 @@ namespace DataAccessLayer.EntityFramework
     {
         public List<Message2> GetSendBoxWithMessageByWriter(int id)
         {
-           using (var c=new Context())
+            using (var c = new Context())
             {
                 return c.Message2s.Include(x => x.ReceiverUser).Where(y => y.SenderID == id).ToList();
             }
