@@ -8,7 +8,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=NIHAT-OVALıOĞLU;database=CoreBlogDb; integrated security=true;");
+            optionsBuilder.UseSqlServer("server=Null; database=Null; user id=*****; password=*****;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,7 +25,7 @@ namespace DataAccessLayer.Concrete
                 .OnDelete(DeleteBehavior.ClientSetNull);
 
             modelBuilder.Entity<Message2>()
-                .HasOne(x => x.SenderUser)
+                .HasOne(x => x.SenderUser) 
                 .WithMany(y => y.WriterSender)
                 .HasForeignKey(z => z.SenderID)
                 .OnDelete(DeleteBehavior.ClientSetNull);

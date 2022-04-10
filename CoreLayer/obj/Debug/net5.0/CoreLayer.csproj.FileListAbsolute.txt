@@ -14,7 +14,6 @@ C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\C
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\CoreLayer\bin\Debug\net5.0\CoreLayer.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\CoreLayer\bin\Debug\net5.0\ref\CoreLayer.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\CoreLayer\bin\Debug\net5.0\CoreLayer.pdb
-C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\CoreLayer\obj\Debug\net5.0\CoreLayer.csproj.AssemblyReference.cache
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\CoreLayer\obj\Debug\net5.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfoInputs.cache
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\CoreLayer\obj\Debug\net5.0\CoreLayer.AssemblyInfo.cs
@@ -22,3 +21,4 @@ C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\C
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\CoreLayer\obj\Debug\net5.0\CoreLayer.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\CoreLayer\obj\Debug\net5.0\ref\CoreLayer.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\CoreLayer\obj\Debug\net5.0\CoreLayer.pdb
+C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\CoreLayer\obj\Debug\net5.0\CoreLayer.csproj.AssemblyReference.cache
