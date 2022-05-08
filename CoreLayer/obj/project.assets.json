@@ -8,27 +8,25 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\by\\.nuget\\packages\\": {}
+    "C:\\Users\\tb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\CoreLayer\\CoreLayer.csproj",
+      "projectUniqueName": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\CoreLayer\\CoreLayer.csproj",
       "projectName": "CoreLayer",
-      "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\CoreLayer\\CoreLayer.csproj",
-      "packagesPath": "C:\\Users\\by\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\CoreLayer\\obj\\",
+      "projectPath": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\CoreLayer\\CoreLayer.csproj",
+      "packagesPath": "C:\\Users\\tb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\CoreLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\by\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+        "C:\\Users\\tb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -62,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

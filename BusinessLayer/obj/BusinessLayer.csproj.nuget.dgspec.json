@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\by\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\tb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\by\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Users\\tb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -30,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -73,29 +71,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\by\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\tb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\by\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Users\\tb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -103,8 +99,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -163,29 +159,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj",
-        "packagesPath": "C:\\Users\\by\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\by\\source\\repos\\Asp.Net Core Mvc5 Blog Projesi\\Github\\CoreBlogProject\\EntityLayer\\obj\\",
+        "projectPath": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\EntityLayer\\EntityLayer.csproj",
+        "packagesPath": "C:\\Users\\tb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tb\\source\\repos\\CoreBlogProject\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\by\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Users\\tb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -229,7 +223,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
