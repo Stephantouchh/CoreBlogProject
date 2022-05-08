@@ -34,3 +34,21 @@ C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\D
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.deps.json
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.runtimeconfig.json
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.runtimeconfig.dev.json
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.dll
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.csproj.CopyComplete
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.dll
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\refint\DataAccessLayer.dll
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\tb\source\repos\CoreBlogProject\DataAccessLayer\obj\Debug\net5.0\ref\DataAccessLayer.dll

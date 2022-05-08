@@ -22,3 +22,15 @@ C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\E
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
 C:\Users\by\source\repos\Asp.Net Core Mvc5 Blog Projesi\Github\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\obj\Debug\net5.0\refint\EntityLayer.dll
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
+C:\Users\tb\source\repos\CoreBlogProject\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll
